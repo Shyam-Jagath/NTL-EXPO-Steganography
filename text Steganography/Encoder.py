@@ -11,7 +11,7 @@ message = input("Enter your message: ").encode()
 encrypted_message = cipher_suite.encrypt(message)
 
 # Step 4: Append to image
-file_path = 'images/Snowbell.png'
+file_path = 'image_path'
 
 with open(file_path, 'ab') as file:
     file.write(encrypted_message)

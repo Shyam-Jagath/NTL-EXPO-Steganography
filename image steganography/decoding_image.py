@@ -5,7 +5,7 @@ from cryptography.fernet import Fernet
 key=input("Enter the key: ").encode()
 cipher_key=Fernet(key)
 
-with open('images/Scooby-doo2.jpg', 'rb') as file:
+with open('image_path', 'rb') as file:
     content = file.read()
 
     hidden_data_start = content.index(bytes.fromhex('FFD9')) + 2

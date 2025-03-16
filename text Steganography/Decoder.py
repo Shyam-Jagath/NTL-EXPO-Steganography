@@ -3,7 +3,7 @@ from cryptography.fernet import Fernet
 key=input("Enter the key: ").encode()
 cipher_key=Fernet(key)
 
-file_path ='images/Snowbell.png'
+file_path ='image_path'
 with open(file_path, 'rb') as file:
     decrypted_message = file.read()
     hidden_data_start=decrypted_message.index(bytes.fromhex('FFD9'))
